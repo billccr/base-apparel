@@ -1,41 +1,58 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <title></title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<title>Frontend Mentor | Base Apparel coming soon page</title>
+	<meta name="description" content="Base Apparel Coming Soon page for Frontend Mentor challenge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
+<!--
+	<meta property="og:title" content="">
+	<meta property="og:type" content="">
+	<meta property="og:url" content="">
+	<meta property="og:image" content="">
 
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
+	<link rel="manifest" href="site.webmanifest">
+ -->
+	<link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
 
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
+	<link rel="apple-touch-icon" href="icon.png">
+	<!-- Place favicon.ico in the root directory -->
 
-  <meta name="theme-color" content="#fafafa">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+
+	<meta name="theme-color" content="#fafafa">
 </head>
 
 <body>
 
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
 
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
+	<h1>We're coming soon</h1>
+
+	<p>
+		Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.
+	</p>
+
+	<form name="email" method="post">
+		<input type="email" name="email" id="emailaddress" placeholder="Email Address" required>
+		<button type="submit" name="submit" value="email">Submit <!-- hide but allow screen readers -->
+			<img src="img/icon-arrow.svg" alt="" />
+		</button>
+	</form>
+
+	<footer>
+		<p class="attribution">
+    	Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.	Coded by <a href="#">Your Name Here</a>.
+		</p>
+	</footer>
+
+
+	<script src="js/vendor/modernizr-3.11.2.min.js"></script>
+	<script src="js/plugins.js"></script>
+	<script src="js/main.js"></script>
+
 </body>
 
 </html>
