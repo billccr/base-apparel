@@ -20,6 +20,10 @@
 	<link rel="apple-touch-icon" href="icon.png">
 	<!-- Place favicon.ico in the root directory -->
 
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/main.css">
 
@@ -27,27 +31,42 @@
 </head>
 
 <body>
+	<div class="container">
+		<header>
+			<img src="img/logo.svg" alt="logo" />
+		</header>
 
+		<div class="main" role="main">
+			<picture>
+				<source srcset="img/hero-desktop.jpg"
+					media="(min-width: 35em)" />
+				<img src="img/hero-mobile.jpg" alt="young woman modelling clothing" />
+			</picture>
 
-	<h1>We're coming soon</h1>
+			<div class="text-container">
+				<h1>We're <span class="highlight">coming soon</span></h1>
 
-	<p>
-		Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.
-	</p>
+				<p>
+					Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.
+				</p>
 
-	<form name="email" method="post">
-		<input type="email" name="email" id="emailaddress" placeholder="Email Address" required>
-		<button type="submit" name="submit" value="email">Submit <!-- hide but allow screen readers -->
-			<img src="img/icon-arrow.svg" alt="" />
-		</button>
-	</form>
+				<form name="email" method="post">
+					<input type="email" name="email" id="emailaddress" placeholder="Email Address" required>
+					<button type="submit" name="submit" value="email">
+						<span class="sr-only">Submit</span> <!-- hide but allow screen readers -->
+						<img src="img/icon-arrow.svg" alt="" />
+					</button>
+				</form>
 
-	<footer>
-		<p class="attribution">
-    	Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.	Coded by <a href="#">Your Name Here</a>.
-		</p>
-	</footer>
+			</div>
 
+			<footer>
+				<p class="attribution">
+					Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Bill Cabrera</a>.
+				</p>
+			</footer>
+		</div>
+	</div>
 
 	<script src="js/vendor/modernizr-3.11.2.min.js"></script>
 	<script src="js/plugins.js"></script>
