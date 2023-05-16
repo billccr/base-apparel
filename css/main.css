@@ -99,25 +99,25 @@ textarea {
 }
 
 header img {
-	padding: 2em;
+	padding: 2rem;
 	width: 25%;
 }
 
 .text-container {
 #  	flex: auto;
- 	font-size: 0.9em;
+ 	font-size: 0.9rem;
 	text-align: center;
 	color: hsl(0, 36%, 70%);
-	padding: 2.3em;
+	padding: 2.2rem;
 }
 
 .text-container h1 {
 	font-weight: 300;
-	font-size: 2.6em;
+	font-size: 2.5rem;
 	text-transform: uppercase;
-	letter-spacing: .3em;
+	letter-spacing: 0.6rem;
 	line-height: 1.1;
-	margin-bottom: 0.5em;
+	margin-bottom: 0rem;
 }
 
 .text-container .highlight {
@@ -126,23 +126,23 @@ header img {
 }
 
 .text-container p {
-	line-height: 1.5;
+	line-height: 1.6;
+	margin-bottom: 0;
 }
 
 form {
 	text-align: left;
-	margin-top: 2.4em;
-	margin-bottom: 10em;
+	margin-top: 2rem;
+	margin-bottom: 10rem;
 }
 
 input {
-	width: 19.5em;
+	width: 15.6rem;
 	position: absolute;
-	border-radius: 2em;
+	border-radius: 2rem;
 	border: 2px solid hsla(0, 36%, 70%, .3);
-	font-size: 1em;
-	line-height: 3em;
-	padding-left: 1.5em;
+	font-size: 0.9rem;
+	padding: 0.9rem 1.5rem;
 	background-color: transparent;
 	color: hsl(0, 36%, 70%);
 }
@@ -151,16 +151,18 @@ button {
  	display: inline-block;
 	float: right;
 	position: relative;
-	top: 1px; right: 1px;
-	background-color: hsla(0, 93%, 68%, .5);
-	border-radius: 2em;
+	padding: 0.9rem 1.7rem;
+	top: 1px; right: 2px;
+  	background-color: hsla(0, 93%, 68%, .5);
+	background: linear-gradient(135deg, hsla(0, 80%, 86%, .7), hsla(0, 74%, 74%, .9) 85%);
+	border-radius: 1.5rem;
 	border: none;
-	height: 3.3em;
-	box-shadow: 0 1em 1em 0 hsla(0, 36%, 70%, .4);
+	height: 3rem;
+	box-shadow: 0 1rem 1rem 0 hsla(0, 36%, 70%, .4);
 }
 
 button img {
-	padding: 0.5em 1.5em;
+# 	height: 100%;
 }
 
 .attribution {
