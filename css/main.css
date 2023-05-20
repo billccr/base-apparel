@@ -90,16 +90,14 @@ textarea {
    ========================================================================== */
 
 .container {
-#	min-height: 100vh;
+	min-height: 100vh;
 	background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
 }
 
 .main {
 	display: flex;
 	flex-direction: column;
-#		justify-content: center;
-#		align-items: center;
-#		min-height: 100vh;
+#	min-height: 100vh;
 }
 
 header img {
@@ -113,8 +111,6 @@ picture {
 }
 
 .text-container {
-# 			display: flex;
-#			flex-direction: column;
  	font-size: 0.9rem;
 	text-align: center;
 	color: hsl(0, 36%, 70%);
@@ -271,13 +267,10 @@ button {
 @media only screen and (min-width: 40em) {
   /* Style adjustments for viewports that meet the condition */
 
-	.container {
-  		flex-direction: column;
-	}
-
 	.main {
-		flex-direction: row-reverse;
-		position: relative;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
 	}
 
 	header img {
@@ -287,21 +280,33 @@ button {
 	}
 
 	picture {
-		position: absolute top right;
+		order: 1;
+		width: auto;
+	}
+
+	picture img {
+		width: auto;
+		max-width: 100%;
+		height: 100%;
+		object-fit: cover;
 	}
 
 	.text-container {
-		padding: 11.7rem 12rem 0rem 10.3rem;
+		max-width: 30rem;
+		padding: 0 0 0 10.3rem;
 		text-align: left;
+		margin: 12rem 8rem 0 0;
 	}
 
 	.text-container h1 {
 		font-size: 4rem;
+	 	letter-spacing: 1rem;
 	}
 
 	.text-container p {
-		font-size: 1.1rem;
+		font-size: 1rem;
 		margin-bottom: 2.5rem;
+		margin-right: 2rem;
 	}
 
 	input {
