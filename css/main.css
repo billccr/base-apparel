@@ -110,6 +110,10 @@ picture {
 	object-fit: cover;
 }
 
+picture img {
+	width: 100%;
+}
+
 .text-container {
  	font-size: 0.9rem;
 	text-align: center;
@@ -166,6 +170,10 @@ button {
 	border: none;
 	height: 3rem;
 	box-shadow: 0 1rem 1rem 0 hsla(0, 36%, 70%, .4);
+}
+
+button:hover {
+	background: hsl(0, 74%, 90%);
 }
 
 .attribution {
@@ -264,7 +272,7 @@ button {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 40em) {
+@media only screen and (min-width: 52rem) {
   /* Style adjustments for viewports that meet the condition */
 
 	.main {
@@ -307,6 +315,10 @@ button {
 		font-size: 1rem;
 		margin-bottom: 2.5rem;
 		margin-right: 2rem;
+	}
+
+	form {
+		margin-right: 3rem;
 	}
 
 	input {
