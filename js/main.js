@@ -1,26 +1,22 @@
-// get the form, email, & input
-// input box, as well as the span element into which we will place the error message.
 const form = document.querySelector("form");
 const email = document.getElementById("emailaddress");
 const emailError = document.querySelector("span.error");
 
 email.addEventListener("input", (event) => {
-  // Each time the user types something, we check if the
-  // form fields are valid.
+  // check each time the user types something
 
   if (email.validity.valid) {
-    // if an error message is visible, but field
-    // is valid, remove error message.
-    emailError.textContent = ""; // clear content of message
-    emailError.className = "error"; // reset visual state of message
+    // if error message is visible but entry is valid, remove error message.
+    emailError.textContent = ""; 		// clear content of message
+    emailError.className = "error"; 	// reset visual state of message
   } else {
-    // If there is still an error, show the correct error
+    // if still an error, display the correct error
     showError();
   }
 });
 
 form.addEventListener("submit", (event) => {
-  // if the email field is valid, let the form submit
+  // if email field is valid, let the form submit
   if (!email.validity.valid) {
     // if not valid, display appropriate error message
     showError();
