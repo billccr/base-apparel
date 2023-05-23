@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="en">
 
 <head>
@@ -21,7 +21,7 @@
 	<!-- Place favicon.ico in the root directory -->
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
 
 	<link rel="stylesheet" href="css/normalize.css">
@@ -39,7 +39,7 @@
 		<div class="main" role="main">
 			<picture>
 				<source srcset="img/hero-desktop.jpg"
-					media="(min-width: 52rem)" />
+					media="(min-width: 52rem)">
 				<img src="img/hero-mobile.jpg" alt="young woman modeling clothing" />
 			</picture>
 
@@ -49,8 +49,9 @@
 				<p>Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.
 				</p>
 
-				<form name="email" method="post">
-					<input type="email" name="email" id="emailaddress" placeholder="Email Address" autocomplete="email"required>
+				<form name="email" method="post" novalidate><!-- pass to js -->
+					<input type="email" name="email" id="emailaddress" placeholder="Email Address" autocomplete="email" >
+					<span class="error" aria-live="polite"></span>
 					<button type="submit" name="submit" value="email">
 						<span class="sr-only">Submit</span> <!-- hide but allow screen readers -->
 						<img src="img/icon-arrow.svg" alt="" />
