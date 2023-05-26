@@ -10,7 +10,6 @@ This is a solution to the [Base Apparel coming soon page challenge on Frontend M
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
   - [Useful resources](#useful-resources)
 - [Author](#author)
 
@@ -47,12 +46,6 @@ Users should be able to:
 - Flexbox
 - Mobile-first workflow
 - vanilla JavaScript
-
-
-### What I learned
-
-First time using `order: 1;` to swap the order of `flex` items instead of using, for example, `row-reverse`.
-
 
 ### Useful resources
 
